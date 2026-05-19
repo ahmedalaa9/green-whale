@@ -271,7 +271,7 @@
 import { ref, onMounted } from "vue";
 import { RouterView } from "vue-router";
 import AppNavbar from "./components/layout/AppNavbar.vue";
-import AppFooter from "./components/layout/AppFooter.vue";
+// import AppFooter from "./components/layout/AppFooter.vue";
 import { useI18n } from "vue-i18n";
 
 const splashVisible = ref(true);
