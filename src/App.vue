@@ -29,7 +29,7 @@ onMounted(() => {
       background: linear-gradient(
         135deg,
         #0c1e5e 0%,
-        #1d4ed8 50%,
+        #1565B8 50%,
         #14532d 100%
       );
     "

@@ -45,7 +45,7 @@ const stats = [
             <div class="flex items-center gap-3">
               <div
                 class="w-10 h-10 rounded-xl flex items-center justify-center"
-                style="background: linear-gradient(135deg, #166534, #4ade80)"
+                style="background: linear-gradient(135deg, #1565B8, #3BA640)"
               >
                 <svg
                   class="w-5 h-5 text-white"
@@ -84,7 +84,7 @@ const stats = [
           >
             <span
               class="w-1.5 h-1.5 rounded-full"
-              style="background: #1d4ed8"
+              style="background: #1565B8"
             ></span>
             <span
               class="text-xs font-semibold uppercase tracking-widest text-brand-deep-blue"
@@ -94,7 +94,7 @@ const stats = [
           </div>
 
           <h2
-            class="text-3xl sm:text-4xl font-black text-gray-900 mb-6 leading-tight"
+            class="text-3xl sm:text-4xl font-black mb-6 leading-tight text-gradient-brand"
             style="letter-spacing: -0.5px"
           >
             {{ t("about.title") }}
@@ -123,7 +123,7 @@ const stats = [
           <RouterLink
             to="/about"
             class="inline-flex items-center gap-2 px-6 py-3 rounded-xl text-sm font-semibold text-white hover:shadow-lg hover:scale-105 transition-all duration-300"
-            style="background: linear-gradient(135deg, #1d4ed8, #166534)"
+            style="background: linear-gradient(135deg, #1565B8, #3BA640)"
           >
             {{ t("about.learnMore") }}
             <svg

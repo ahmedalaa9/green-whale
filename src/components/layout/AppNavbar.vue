@@ -75,7 +75,7 @@
         <RouterLink
           to="/contact"
           class="px-4 py-2 rounded-xl text-sm font-semibold text-white transition-all duration-200 hover:shadow-lg hover:scale-105"
-          style="background: linear-gradient(135deg, #1d4ed8, #166534)"
+          style="background: linear-gradient(135deg, #1565B8, #3BA640)"
         >
           {{ t("nav.contactCta") }}
         </RouterLink>
@@ -147,7 +147,7 @@
             to="/contact"
             @click="mobileOpen = false"
             class="flex-1 py-2 text-center rounded-xl text-sm font-semibold text-white"
-            style="background: linear-gradient(135deg, #1d4ed8, #166534)"
+            style="background: linear-gradient(135deg, #1565B8, #3BA640)"
           >
             {{ t("nav.contactCta") }}
           </RouterLink>

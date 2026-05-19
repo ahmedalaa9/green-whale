@@ -8,7 +8,7 @@ const features = [
   {
     key: 1,
     icon: `<path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 10V3L4 14h7v7l9-11h-7z"/>`,
-    accentHex: "#1D4ED8",
+    accentHex: "#1565B8",
     bgGradient: "from-blue-50 to-sky-50",
   },
   {
@@ -49,7 +49,7 @@ const features = [
           </span>
         </div>
         <h2
-          class="text-3xl sm:text-4xl font-black text-gray-900 mb-4 leading-tight whitespace-pre-line"
+          class="text-3xl sm:text-4xl font-black mb-4 leading-tight whitespace-pre-line text-gradient-brand"
           style="letter-spacing: -0.5px"
         >
           {{ t("sustainability.title") }}
@@ -98,7 +98,7 @@ const features = [
         <RouterLink
           to="/about"
           class="inline-flex items-center gap-2 px-6 py-3 rounded-xl text-sm font-semibold text-white hover:shadow-lg hover:scale-105 transition-all duration-300"
-          style="background: linear-gradient(135deg, #1d4ed8, #166534)"
+          style="background: linear-gradient(135deg, #1565B8, #3BA640)"
         >
           {{ t("sustainability.cta") }}
           <svg

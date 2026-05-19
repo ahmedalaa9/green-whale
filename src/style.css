@@ -30,14 +30,21 @@
 
 @layer utilities {
   .text-gradient-blue {
-    background: linear-gradient(135deg, #1D4ED8, #38BDF8);
+    background: linear-gradient(135deg, #1565B8, #38BDF8);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
   }
 
   .text-gradient-green {
-    background: linear-gradient(135deg, #166534, #4ADE80);
+    background: linear-gradient(135deg, #166534, #3BA640);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .text-gradient-brand {
+    background: linear-gradient(135deg, #1565B8 0%, #1B8AC4 40%, #2BA34A 70%, #3BA640 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;

@@ -11,7 +11,7 @@ const services = [
     image:
       "https://images.pexels.com/photos/236705/pexels-photo-236705.jpeg?auto=compress&cs=tinysrgb&w=600&q=80",
     accent: "from-blue-600 to-blue-400",
-    accentHex: "#1D4ED8",
+    accentHex: "#1565B8",
   },
   {
     key: "commercial",
@@ -59,7 +59,7 @@ const services = [
           >
         </div>
         <h2
-          class="text-3xl sm:text-4xl font-black text-gray-900 mb-4 leading-tight"
+          class="text-3xl sm:text-4xl font-black mb-4 leading-tight text-gradient-brand"
           style="letter-spacing: -0.5px"
         >
           {{ t("services.title") }}

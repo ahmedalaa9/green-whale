@@ -53,7 +53,7 @@ const partners = [
               <!-- Icon circle -->
               <div
                 class="w-9 h-9 rounded-xl flex items-center justify-center flex-shrink-0"
-                style="background: linear-gradient(135deg, #1d4ed8, #166534)"
+                style="background: linear-gradient(135deg, #1565B8, #3BA640)"
               >
                 <svg
                   class="w-5 h-5 text-white"

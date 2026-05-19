@@ -15,7 +15,7 @@
           background: linear-gradient(
             135deg,
             rgba(13, 27, 90, 0.88) 0%,
-            rgba(29, 78, 216, 0.75) 45%,
+            rgba(21, 101, 184, 0.75) 45%,
             rgba(22, 101, 52, 0.65) 100%
           );
         "
@@ -111,7 +111,7 @@
           <RouterLink
             to="/services"
             class="group inline-flex items-center gap-2 px-6 py-3.5 rounded-2xl text-sm font-semibold text-white shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300"
-            style="background: linear-gradient(135deg, #1d4ed8, #0ea5e9)"
+            style="background: linear-gradient(135deg, #1565B8, #1B8AC4)"
           >
             {{ t("hero.ctaPrimary") }}
             <svg
