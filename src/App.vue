@@ -29,7 +29,7 @@ onMounted(() => {
       background: linear-gradient(
         135deg,
         #0c1e5e 0%,
-        #1565B8 50%,
+        #1565b8 50%,
         #14532d 100%
       );
     "
@@ -108,6 +108,7 @@ onMounted(() => {
   <!-- Main App (shown once splash is done) -->
   <div v-show="!splashVisible" class="min-h-screen flex flex-col">
     <AppNavbar />
+    <AppFooter />
     <main class="flex-1">
       <RouterView v-slot="{ Component }">
         <Transition name="page" mode="out-in">
@@ -115,7 +116,6 @@ onMounted(() => {
         </Transition>
       </RouterView>
     </main>
-    <AppFooter />
   </div>
 </template>
 
