@@ -9,7 +9,7 @@
             <img
               src="/logo-green-whale.png"
               alt="Green Whale"
-              class="h-16 w-auto"
+              class="h-14 w-auto"
             />
           </div>
           <p class="text-gray-400 text-sm leading-relaxed max-w-sm">
