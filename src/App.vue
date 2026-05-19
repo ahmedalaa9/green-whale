@@ -1,22 +1,3 @@
-<script setup lang="ts">
-import { ref, onMounted } from "vue";
-import { RouterView } from "vue-router";
-import AppNavbar from "./components/layout/AppNavbar.vue";
-import AppFooter from "./components/layout/AppFooter.vue";
-
-const splashVisible = ref(true);
-const splashLeaving = ref(false);
-
-onMounted(() => {
-  setTimeout(() => {
-    splashLeaving.value = true;
-    setTimeout(() => {
-      splashVisible.value = false;
-    }, 600);
-  }, 2500);
-});
-</script>
-
 <template>
   <!-- Splash Screen -->
   <div
@@ -108,7 +89,6 @@ onMounted(() => {
   <!-- Main App (shown once splash is done) -->
   <div v-show="!splashVisible" class="min-h-screen flex flex-col">
     <AppNavbar />
-    <AppFooter />
     <main class="flex-1">
       <RouterView v-slot="{ Component }">
         <Transition name="page" mode="out-in">
@@ -116,8 +96,28 @@ onMounted(() => {
         </Transition>
       </RouterView>
     </main>
+    <AppFooter />
   </div>
 </template>
+
+<script setup lang="ts">
+import { ref, onMounted } from "vue";
+import { RouterView } from "vue-router";
+import AppNavbar from "./components/layout/AppNavbar.vue";
+import AppFooter from "./components/layout/AppFooter.vue";
+
+const splashVisible = ref(true);
+const splashLeaving = ref(false);
+
+onMounted(() => {
+  setTimeout(() => {
+    splashLeaving.value = true;
+    setTimeout(() => {
+      splashVisible.value = false;
+    }, 600);
+  }, 2500);
+});
+</script>
 
 <style>
 @keyframes slideUpOut {
