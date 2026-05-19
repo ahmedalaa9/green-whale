@@ -74,7 +74,7 @@ export default {
     followUs: 'Follow Us',
     address: 'Cairo, Egypt',
     phone: '+20 100 000 0000',
-    email: 'info@greenwhale.eg',
+    email: "info{'@'}greenwhale.eg",
     copyright: '© 2025 Green Whale. All rights reserved.',
     madeWith: 'Made with passion for a greener Egypt.',
   },
