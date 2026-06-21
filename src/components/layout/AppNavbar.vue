@@ -1,8 +1,17 @@
 <template>
   <header
+    :style="
+      !scrolled
+        ? `
+      background: rgba(255, 255, 255, 0.08);
+      background: transparent;
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px)`
+        : ''
+    "
     :class="[
       'fixed top-0 inset-x-0 z-50 transition-all duration-300',
-      scrolled ? 'glass-nav shadow-sm py-3' : 'bg-transparent py-5',
+      scrolled ? 'glass-nav shadow-sm py-2' : 'bg-transparent py-2',
     ]"
   >
     <nav
@@ -10,14 +19,24 @@
     >
       <!-- Logo -->
       <RouterLink to="/" class="flex items-center flex-shrink-0 group">
-        <img
-          src="/logo-green-whale.png"
-          alt="Green Whale"
-          :class="[
-            'w-auto transition-transform duration-300 group-hover:scale-105',
-            scrolled ? ' h-14' : 'h-16',
-          ]"
-        />
+        <div
+          style="
+            /* background: rgba(255, 255, 255, 0.15); */
+            /* backdrop-filter: blur(8px); */
+            /* border-radius: 12px; */
+            /* padding: 8px 16px; */
+            filter: drop-shadow(0 2px 10px rgba(0, 0, 0, 0.35));
+          "
+        >
+          <img
+            src="/logo-green-whale.png"
+            alt="Green Whale"
+            :class="[
+              'w-auto transition-transform duration-300 group-hover:scale-105',
+              scrolled ? ' h-16' : 'h-16',
+            ]"
+          />
+        </div>
       </RouterLink>
 
       <!-- Desktop nav links -->
@@ -75,7 +94,7 @@
         <RouterLink
           to="/contact"
           class="px-4 py-2 rounded-xl text-sm font-semibold text-white transition-all duration-200 hover:shadow-lg hover:scale-105"
-          style="background: linear-gradient(135deg, #1565B8, #3BA640)"
+          style="background: linear-gradient(135deg, #1565b8, #3ba640)"
         >
           {{ t("nav.contactCta") }}
         </RouterLink>
@@ -147,7 +166,7 @@
             to="/contact"
             @click="mobileOpen = false"
             class="flex-1 py-2 text-center rounded-xl text-sm font-semibold text-white"
-            style="background: linear-gradient(135deg, #1565B8, #3BA640)"
+            style="background: linear-gradient(135deg, #1565b8, #3ba640)"
           >
             {{ t("nav.contactCta") }}
           </RouterLink>
